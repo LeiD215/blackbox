@@ -320,3 +320,32 @@
   失效模式做了针对性修复，尚未在更多真实项目中检验
 - 是否后续被撤回：否
 - 关联：ADR-0004
+
+---
+
+## [2026-08-01] 补记：blackbox-project-record 文件夹正式归档
+
+- 开始：2026-08-01（补记，精确时刻未记录）
+- 结束：2026-08-01
+- 类型：归档、新增
+- 对象：`blackbox-project-record`（本仓库出现前，blackbox 自身历史的
+  临时存放文件夹，仅含 STATUS.md/CHANGELOG.md/adr/，不含 SKILL.md 源
+  文件本身）
+- 原因：2026-07-24 blackbox 本体纳入本 git 仓库时（见上条、ADR-0003），
+  `blackbox-project-record` 文件夹的 STATUS.md 已在**它自己那份文件里**
+  记录了"已归档"状态，但本仓库（唯一权威版本）当时没有对应留一笔——
+  这导致"旧记录被正式退役"这个事实，只活在一份此后大概率不会再被
+  打开的旧文件里，本仓库读者无法得知它曾经存在过、现状如何
+- 影响：本条作为补记，把这个事实带回权威版本这一侧。`blackbox-project-
+  record` 文件夹自 2026-07-24 起正式归档，不再独立维护，其历史内容
+  （STATUS/CHANGELOG/adr/0001/adr/0002）已核对与本仓库一致（2026-08-01
+  逐字比对确认 adr/0001、adr/0002 无差异），不再需要迁移或合并任何
+  额外内容
+- 验证：通过（逐字节 diff 比对 `blackbox-project-record` 与本仓库
+  2026-07-24 版本的 STATUS.md/CHANGELOG.md/adr/0001/adr/0002，确认除
+  "归档声明"这一条差异外，其余内容完全一致）
+- 是否后续被撤回：否
+- 关联：ADR-0003
+- author: ai（用户提供 blackbox-project-record.zip，要求比对本仓库并
+  补齐缺失内容）
+- verified_by: 空
