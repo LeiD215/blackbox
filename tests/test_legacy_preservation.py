@@ -12,6 +12,13 @@ def git_blob_sha(data: bytes) -> str:
     return hashlib.sha1(f"blob {len(data)}\0".encode() + data).hexdigest()
 
 
+MANIFEST_PATH = (
+    Path(__file__).resolve().parent
+    / "data"
+    / "migration-manifest.json"
+)
+
+
 class LegacyPreservationTests(unittest.TestCase):
     def test_manifest_is_source_staging_only(self):
         stage = Path(__file__).resolve().parents[1]
@@ -21,7 +28,7 @@ class LegacyPreservationTests(unittest.TestCase):
         stage = Path(__file__).resolve().parents[1]
         if stage.parent.name != "productization-prep":
             self.skipTest("source-staging manifest is not packaged in product")
-        manifest = json.loads((stage.parent / "MIGRATION-MANIFEST.json").read_text(encoding="utf-8"))
+        manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         preserved = [entry for entry in manifest["entries"] if entry["action"] == "preserve"]
         self.assertGreater(len(preserved), 0)
         for entry in preserved:
@@ -35,7 +42,7 @@ class LegacyPreservationTests(unittest.TestCase):
         stage = Path(__file__).resolve().parents[1]
         if stage.parent.name != "productization-prep":
             self.skipTest("source-staging manifest is not packaged in product")
-        manifest = json.loads((stage.parent / "MIGRATION-MANIFEST.json").read_text(encoding="utf-8"))
+        manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         for entry in manifest["entries"]:
             with self.subTest(path=entry["target_path"]):
                 working = (stage / entry["target_path"]).read_bytes()

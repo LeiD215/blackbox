@@ -11,6 +11,13 @@ from blackbox_vnext.slice2 import dependency_pin as slice2_dependency_pin
 from blackbox_vnext.slice4 import dependency_pin as slice4_dependency_pin
 
 
+MANIFEST_PATH = (
+    Path(__file__).resolve().parent
+    / "data"
+    / "migration-manifest.json"
+)
+
+
 class LFCheckoutDomainTests(unittest.TestCase):
     def test_all_byte_pinned_python_sources_are_lf(self):
         stage = Path(__file__).resolve().parents[1]
@@ -63,7 +70,7 @@ class LFCheckoutDomainTests(unittest.TestCase):
         for line in completed.stdout.splitlines():
             relative_path, attribute, value = line.split(": ")
             attributes.setdefault(relative_path, {})[attribute] = value
-        manifest = json.loads((stage.parent / "MIGRATION-MANIFEST.json").read_text(encoding="utf-8"))
+        manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
         expected = {entry["target_path"]: entry["staged_sha256"] for entry in manifest["entries"]}
         for relative_path in paths:
             self.assertEqual(attributes[relative_path]["text"], "unset")

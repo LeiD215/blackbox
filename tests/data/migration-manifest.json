@@ -1,0 +1,2058 @@
+{
+  "schema_version": 1,
+  "target_repository": "LeiD215/blackbox",
+  "target_branch": "vnext",
+  "control_payload_paths": [
+    "tests/data/migration-manifest.json"
+  ],
+  "entries": [
+    {
+      "target_path": ".gitattributes",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "ab13c7bb27ba7ddd5c468d73b13b8844ee6494533fb359a35f467665796759e8"
+    },
+    {
+      "target_path": "adr/0001-retire-logbook-merge-into-blackbox.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "adr/0001-retire-logbook-merge-into-blackbox.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "28b972a975f3d4f301536b8f503b168f08774ea6",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "ddf85e0321c95f62fa17ba5be44366c036dfcf79ce7029d31bc74338edc1c978"
+    },
+    {
+      "target_path": "adr/0002-write-through-fix.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "adr/0002-write-through-fix.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "811eaa5be8c63eb67abc9094e04cff429ee4fc2d",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "7f5c69fefeb340b25130f5cbd1279368307c8a00298c57208d5c361543dd8144"
+    },
+    {
+      "target_path": "adr/0003-put-blackbox-under-git.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "adr/0003-put-blackbox-under-git.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "d349a11e358248144f95fc324afb005ae53c2b5d",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "78541c3666d8ffa6c4cb7fb47f0ae6178816adb6ef8d3560536bb8c0f7835d4f"
+    },
+    {
+      "target_path": "adr/0004-handoff-doc-discoverability.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "adr/0004-handoff-doc-discoverability.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "606515afd970604fe86d04de48aff06ba75c719a",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "00ab9ab4043eb40f9551601a37f120c416ffaf819929b259b306b5eb48ebf98d"
+    },
+    {
+      "target_path": "adr/0005-multi-agent-collaboration-patch.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "adr/0005-multi-agent-collaboration-patch.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "bbdd9dff5f9ce36d0241f9ddf0afc2d7941b4cb1",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "51068646ff5422d3ed4d9b80466446bd09f470ecd50d28f0822d59912a04df0b"
+    },
+    {
+      "target_path": "assets/ADR_TEMPLATE.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "assets/ADR_TEMPLATE.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "79f4fcd3f1a358270ee21f98be492415b62fa5f9",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "fd7f723aca13e1b0aca46aad45798322b22d655ccdb067566cbdae6e2116b339"
+    },
+    {
+      "target_path": "assets/CHANGELOG_TEMPLATE.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "assets/CHANGELOG_TEMPLATE.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "8fc5368169400fecfbd65d8819287c4069704aa3",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "95bb2cae101a6beeed4d590c405a210884a8b1c94c92bc9991d69c63c25c7500"
+    },
+    {
+      "target_path": "assets/CHARTER_TEMPLATE.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "assets/CHARTER_TEMPLATE.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "a9386bc9ba023f6417ddb63b51119df66223ad5a",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "c70fd0f665e5e0b06508edf1e9cf017db948436d52ccbf9497d1394de3bf60b3"
+    },
+    {
+      "target_path": "assets/COLLABORATION_TEMPLATE.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "assets/COLLABORATION_TEMPLATE.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "8dfc6b3f652536dbd38bc411be65d0a02cb0c692",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "87681fe1b327aa526793a3a1e8b5a4e55e20b761e76e1e1e45bd97c74bf013ae"
+    },
+    {
+      "target_path": "assets/DECISION_INDEX_TEMPLATE.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "assets/DECISION_INDEX_TEMPLATE.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "44ac894227b1655e8076952465347bdd10ef2707",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "fe6944c3907288e9592bf97027c26da18f25a9f1e118e366a10212b1377393bc"
+    },
+    {
+      "target_path": "assets/FAULT_CASES_TEMPLATE.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "assets/FAULT_CASES_TEMPLATE.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "71f4110bbc75b49cda4e9c19f7b9446ee589780b",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "da6fc42f1f0198560ff81228e7c46d1529c2e3eec147141dcb1c8c25d1465632"
+    },
+    {
+      "target_path": "assets/SOP_TEMPLATE.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "assets/SOP_TEMPLATE.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "fabe1c06b4a687b56d5fd2515a0b06b17f2d10e0",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "cef91076dcee67bce64a56b9bad79a691132fec645c68da6e936204507fc6278"
+    },
+    {
+      "target_path": "assets/STATUS_TEMPLATE.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "assets/STATUS_TEMPLATE.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "a0378e904082414b395288f6df863bbc06d2b5b8",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "e0da3b735a8a9deb413fa93273a3ed81dbb78fe66d5285cd4e6120c35df97180"
+    },
+    {
+      "target_path": "assets/SYNC_MAP_TEMPLATE.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "assets/SYNC_MAP_TEMPLATE.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "cc3e3bda4e9ae365b158ef45b87bbbeda06f3bcf",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b8ed21b20bbff4a6739c5a136c5138319f54e2353ca91f169688c4dd3ff0ad1d"
+    },
+    {
+      "target_path": "assets/TASK_TRACKER_TEMPLATE.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "assets/TASK_TRACKER_TEMPLATE.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "fb54e61916d0642dc9568547d9967faea7b6c7a2",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "7e6e026c32d2d18dfc02f736b01ec0350199839126cb18a10ac1e25d9d6c3277"
+    },
+    {
+      "target_path": "CHANGELOG.md",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "CHANGELOG.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "8624995683664adf0f10cf0888d42e17ecb980fe",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "f38c080263aa1c4a846bbca89a123020c863bff14926c2476df449cab25c837c"
+    },
+    {
+      "target_path": "fixtures/golden/g1_ordinary.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/golden/g1_ordinary.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "cc884f3ba1804c768d969976be871ce601ad7980",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "caa95cf0f9e6c7d13bbaa71b689e7798d5d65b1813554500ede9bc960fd3a08d"
+    },
+    {
+      "target_path": "fixtures/golden/g2_nonbmp_emoji.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/golden/g2_nonbmp_emoji.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "c5460388f7629074681525cc412d2a44957ef164",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "c7e51506324757ec59e076b9ba828c55778c3f9a3dbb7145687d7781e311d241"
+    },
+    {
+      "target_path": "fixtures/golden/g2b_utf16_discriminator.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/golden/g2b_utf16_discriminator.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "c45579126ebffce65c4602bd1ee78a28bdd7318a",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "45f690e7a50b855d225c6d625e3bc061ce868895810a9b2281d0d646b67d13b7"
+    },
+    {
+      "target_path": "fixtures/golden/g3_intmax.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/golden/g3_intmax.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "cc39aa07c1a572addef28d41651d2e2895a8acb6",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "7c13d7f5a6bf4303a51f1d601756e1dfd27ec48cbc2f2191f72b9ab1750ddd86"
+    },
+    {
+      "target_path": "fixtures/golden/g4_intmin.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/golden/g4_intmin.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "7e7ab0f7d740bfc561d9a266a6823f6159c933a7",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b36e988213d6bf5c7b97d22f117e43dfaf0ea7fdd10e1b528b88958021f9d38b"
+    },
+    {
+      "target_path": "fixtures/golden/g5_int_overflow_typed_string.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/golden/g5_int_overflow_typed_string.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "e8bf193f8d87468dffaf9e7d259a1da721c8443e",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "2a9eda550780073a524e0560a75f144fe39040f1d8491867c0102dbdbe9576dc"
+    },
+    {
+      "target_path": "fixtures/invalid/g5_int_max_plus_one.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/invalid/g5_int_max_plus_one.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "5871904eb37dd2602c40a3840268ff35c44bf815",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "a60daa56e7067f8242aee03dbb613c4c93a44a6b03594a1aa902e24c5c1e6475"
+    },
+    {
+      "target_path": "fixtures/invalid/g6_duplicate_key.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/invalid/g6_duplicate_key.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "4fbd0000702794f4000847dc06b787859fc75107",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "46b58ee7f4d0d611fae523d41da2717f1db3fb83e3b41635db8c8877761adbc0"
+    },
+    {
+      "target_path": "fixtures/invalid/g7_lone_surrogate.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/invalid/g7_lone_surrogate.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "0a2ffad4d95584d4a8d6913fa0fd89d88c786d31",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "6cb1b155dcd12830798c72e24312e76dfd63475c478335c5bbd58dd7ba74354d"
+    },
+    {
+      "target_path": "fixtures/invalid/g8_unknown_top_level.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/invalid/g8_unknown_top_level.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "b51da18a5d9092a10febfbab7928eb6c76d905da",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "2e61ca2cef02fd25fbb0f25bb9cdb4e261e73968b3c4b3c9cb6b5d9164e802a4"
+    },
+    {
+      "target_path": "fixtures/invalid/g9_bad_content_hash.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/invalid/g9_bad_content_hash.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "0bffd5b525a5eada696072d25be9c3d6e1dc9a85",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "9430be1d6291d6389a2ec8db3bb6be7d88317dab9d35f93301d92f05f1d08f5b"
+    },
+    {
+      "target_path": "fixtures/lifecycle/l1a_original_unclassified.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/lifecycle/l1a_original_unclassified.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "9c2b1c2541419cf0054efa465656cbaf411c6939",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "040a142d8916d2a806135fe37fefa79f5ae4d590ce45562446f4bb78405b0d06"
+    },
+    {
+      "target_path": "fixtures/lifecycle/l1b_reclassify.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/lifecycle/l1b_reclassify.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "315e3432010e4440bcc94a0e4f581d1f59ec6085",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "934bb205d5895f5e3e216831cc341b9c92e74a25f1ce1b996e8d86a72f4ecd12"
+    },
+    {
+      "target_path": "fixtures/lifecycle/l1c_replacement.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/lifecycle/l1c_replacement.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "9fc437e50e952351088e35a4b889b3d1a295a60a",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "44075f76c3c1ca040eafd1b0ee4b663cb477848a70527c714edb87eeb3dac475"
+    },
+    {
+      "target_path": "fixtures/lifecycle/l1d_competing_replacement_first.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/lifecycle/l1d_competing_replacement_first.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "2e20dc25d1a993e5d2e805fa9241d2fd30c7f548",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "fd783d5db813f1b706279da2a66a66ac9171a094a245d248efdf3ae866aa5072"
+    },
+    {
+      "target_path": "fixtures/lifecycle/l1e_competing_replacement_second.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/lifecycle/l1e_competing_replacement_second.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "db9e2f9cf2785f8eba6c2fed685e3a7bce49ff57",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "5c1baff8f567255bd27aad598cea11d0bf093b0777f29ca3442e0d166d867545"
+    },
+    {
+      "target_path": "fixtures/lifecycle/l2a_orphan_observed.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/lifecycle/l2a_orphan_observed.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "2379fc12b78aa94505849fd4de4cf69a906344bb",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "e980047e23f35a943e79b48cedb18e11929ae597833c7b4a3552238c6a57c318"
+    },
+    {
+      "target_path": "fixtures/lifecycle/l2b_reconciliation_genesis.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/lifecycle/l2b_reconciliation_genesis.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "7e3a6608bcd4223e8ff1a4a14e1b24d10d79d941",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "238352d21233b1c00d5e009e8f317b8db035da9dd0ccd9fe4f35efe52adfaee3"
+    },
+    {
+      "target_path": "fixtures/lifecycle/l3a_existing_head.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/lifecycle/l3a_existing_head.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "b20e235aa0a28837bb2e7cdcbc638fb38ae4d611",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "0166a55d3a979287fd9b60dd5b37ab573f0e32a5172a99a739d308af5b5b41db"
+    },
+    {
+      "target_path": "fixtures/lifecycle/l3b_orphan_observed.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/lifecycle/l3b_orphan_observed.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "e48837fca561e75f75f8260975277cfb3cc1698a",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b775720cea8600dee1bc21a511df8edab934b31b085ef0d5a28dc74748993e45"
+    },
+    {
+      "target_path": "fixtures/lifecycle/l3c_reconciliation_existing_head.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/fixtures/lifecycle/l3c_reconciliation_existing_head.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "cfd52baca7e7774c1098b42d75080977f6c91d88",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "3bc95b8c33ddd4564dc4758dcbb1daabd9bb1ca8a62386b5e653db3a433d7745"
+    },
+    {
+      "target_path": "PRODUCT-RUNTIME.md",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "2823e091aa182d1a54dc619a61923a94843c580467987d4f079fe603acb64e85"
+    },
+    {
+      "target_path": "pyproject.toml",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "791b73d395d742b65a18c842896b2de6c865fd345183e171f0ba32e7e8c31c77"
+    },
+    {
+      "target_path": "README.md",
+      "action": "transform",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "README.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "ef450366f6aca98525dd9f431f34b9b0f0af40de",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "vNext-aware evolution; original retained by v1.0.0/legacy/v1",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "375c4574ee008d911fb71dd1cc4232e86cc97370d53bd7f1fd543eb237be4d15"
+    },
+    {
+      "target_path": "schemas/checkpoint.schema.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/schema/checkpoint.schema.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "1714978529a7d50882371268400dc17bdde79d5b",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "10dcb814ebe8bb796d3ab8bba036f919d4d7e6f6c2929efedef54b14200f4764"
+    },
+    {
+      "target_path": "schemas/event.schema.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/schema/event.schema.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "4ceb450af8783a1c063a65a577f869f1eb531509",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "a92604968a021763c46b82366f015ac8563385df9e81377e575d441f304990a0"
+    },
+    {
+      "target_path": "schemas/manifest.schema.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/schema/manifest.schema.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "1d9c925c8569712688df0bc03d263cca80283c6b",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "247a4f2edef070b945e8c34e00d663b4db43a20ef1f05a7aa604834f89e07d2d"
+    },
+    {
+      "target_path": "schemas/observation-profile.schema.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/schema/observation-profile.schema.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "23fc7db792678eca1340b84616b31765dddd75a5",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b71059ec87ff9a5a68aed7eebffd9152b107274418cd12bacf2d8cc42e6bdb60"
+    },
+    {
+      "target_path": "schemas/subtypes.json",
+      "action": "copy",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice0/schema/subtypes.json",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "5cb9159e9085e99a7895f8c3863d707cf5eb7655",
+      "product_role": "public schema or conformance fixture",
+      "compatibility_impact": "new machine contract",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "c191fd69cebab1d35c2bdc84764640fd85eefc0005d30b1454d3d1ac0c89ba09"
+    },
+    {
+      "target_path": "SKILL.md",
+      "action": "transform",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "SKILL.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "5a4b93e259302a86c3799d43a1b657e8c6b446e6",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "vNext-aware evolution; original retained by v1.0.0/legacy/v1",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "c9c1755dd75a88cd5669ee70aab1db85f8ce99d5cb679672b85af6339e14c76b"
+    },
+    {
+      "target_path": "src/blackbox_vnext/__init__.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "c1c9daa97c2322cc5d00aa27fe17949e95a36d07b0edabac0a8bf69e2a73c8da"
+    },
+    {
+      "target_path": "src/blackbox_vnext/__main__.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "target_path": "src/blackbox_vnext/adapters.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice5/bbx5/adapters.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "28cdbe778fbf460401bd7cc3eb5a5b577f1a77d5",
+      "product_role": "receipt/readback/acceptance runtime",
+      "compatibility_impact": "new vNext API; incubation pins removed",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b1f27651568ec297f270d3406043f34c0fe145195753be93cdfa570358c44f0e"
+    },
+    {
+      "target_path": "src/blackbox_vnext/authority.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/authority.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "4433ced78a13522c4edec1c7222fbd142a45aeb2",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "d6210258190827db6e440285be96c847912685fe7432c19fb4ce5df2ad052aa5"
+    },
+    {
+      "target_path": "src/blackbox_vnext/baseline.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/baseline.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "19ba8c3457cd25b1944aad210104a7ff25dddddc",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b504e652adf6f8f706eab8d8ec02cd7cd9a364c1e567566485e6c95912b157a1"
+    },
+    {
+      "target_path": "src/blackbox_vnext/canonical.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/canonical.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "b58f1b33f7fd4a266f0acc15f0539e6d89cb3984",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "4c75f9978bac607fe10816f04e504e2d11a997d1834ac027fa1b17e44d3827ef"
+    },
+    {
+      "target_path": "src/blackbox_vnext/cli.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "1ad048393a4dd8902e8e06ceb5481fee4e2fcbb0f774e46ada91d77dc22f6396"
+    },
+    {
+      "target_path": "src/blackbox_vnext/data/bootstrap.json",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "af5e9289bfdab1d88184fe6fbf5c158d9aa7210dc7a77b52802e681541540477"
+    },
+    {
+      "target_path": "src/blackbox_vnext/data/checkpoint.schema.json",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "10dcb814ebe8bb796d3ab8bba036f919d4d7e6f6c2929efedef54b14200f4764"
+    },
+    {
+      "target_path": "src/blackbox_vnext/data/event.schema.json",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "a92604968a021763c46b82366f015ac8563385df9e81377e575d441f304990a0"
+    },
+    {
+      "target_path": "src/blackbox_vnext/data/FORMAT.md",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b899e5ad667431a804466f448b7bbd8b0c0112cbdf822c7494e92fede98003e6"
+    },
+    {
+      "target_path": "src/blackbox_vnext/data/manifest.schema.json",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "247a4f2edef070b945e8c34e00d663b4db43a20ef1f05a7aa604834f89e07d2d"
+    },
+    {
+      "target_path": "src/blackbox_vnext/data/observation-profile.json",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "532e93ad1d2577a0c1104e8b0cca3eed366f4169a9b178df5f90f50cf7c4e1c2"
+    },
+    {
+      "target_path": "src/blackbox_vnext/data/observation-profile.schema.json",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b71059ec87ff9a5a68aed7eebffd9152b107274418cd12bacf2d8cc42e6bdb60"
+    },
+    {
+      "target_path": "src/blackbox_vnext/data/subtypes.json",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "c191fd69cebab1d35c2bdc84764640fd85eefc0005d30b1454d3d1ac0c89ba09"
+    },
+    {
+      "target_path": "src/blackbox_vnext/dependency_pin.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "d8e3a07ac1bdcac5f817d679ff7ae6241e504d0456eeab7f8937b6455924f5e6"
+    },
+    {
+      "target_path": "src/blackbox_vnext/fold.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/fold.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "e3517b3586f9315e4c91998eb3a2975a1f34feab",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "07f8442b9d8d4c5b86b47e82d2961793a4e216c648fcf490f24aad1a3cdb37e6"
+    },
+    {
+      "target_path": "src/blackbox_vnext/gate.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice5/bbx5/gate.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "f4597e2e662d747413bae41631da7216d6a34e95",
+      "product_role": "receipt/readback/acceptance runtime",
+      "compatibility_impact": "new vNext API; incubation pins removed",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "9ce4722da69f4da730fad49cd8e3a55689eeb0a4f7d31f18d73898c76ada1548"
+    },
+    {
+      "target_path": "src/blackbox_vnext/ingest.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/ingest.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "9387ace3431d46748905755574c9955e5264d225",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "5c0a832e1a4739464b21c566452c4928fe7222fdf6db4bfe962be2870457b928"
+    },
+    {
+      "target_path": "src/blackbox_vnext/integrity.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "7b55870b4d193dd42c6f13d35b72de566840ecbaf299a6ce2063488c5938b7b9"
+    },
+    {
+      "target_path": "src/blackbox_vnext/observe.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/observe.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "da1ee83943f7a7d5ec3209c6bb09c443c340a588",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "23e6f1e57bc0309b8ec0a82dd638ccc54d72adbbc477eaf73c9cfdc0d98cf3dd"
+    },
+    {
+      "target_path": "src/blackbox_vnext/receipt.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice5/bbx5/receipt.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "6734c7c10682764483ff04e461c77e9487dda58a",
+      "product_role": "receipt/readback/acceptance runtime",
+      "compatibility_impact": "new vNext API; incubation pins removed",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "022208c02c4eda691b296d97efbe5aeee22fe8342916075529e9d23d98b0ade7"
+    },
+    {
+      "target_path": "src/blackbox_vnext/recovery.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "91d350af0ec157c9c158cc8a9510758f743d7a60d287f67f1fe374b808a48752"
+    },
+    {
+      "target_path": "src/blackbox_vnext/reingest.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/reingest.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "7a7371f94169ffdf790bcf13ce77613591bb0afb",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "106b827ab9d1e243b0bdab8d020c837e7f8e3d0ea500dff2a082ee54d568994e"
+    },
+    {
+      "target_path": "src/blackbox_vnext/sidecar.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "7800dd9b222aad917923a9c730669135c0ee9128efe49caf21255c48bbc562a5"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/__init__.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "4d5208649d1ef52e42c8dd323189bbfaa76163b8730e227dafe7d73a1575ddc7"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/__main__.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "0bc86f7eb2e1c35dfac05de9ed6552afdaa4b794e09a2e1ee9f81b8d420511f2"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/authority.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/authority.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "4433ced78a13522c4edec1c7222fbd142a45aeb2",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "ab50fbe25d5cdc24f3a85fb51dfbcb9c4e4c25305fd8b957abbcef5ab84c2422"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/baseline.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/baseline.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "19ba8c3457cd25b1944aad210104a7ff25dddddc",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b504e652adf6f8f706eab8d8ec02cd7cd9a364c1e567566485e6c95912b157a1"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/canonical.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/canonical.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "b58f1b33f7fd4a266f0acc15f0539e6d89cb3984",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "4c75f9978bac607fe10816f04e504e2d11a997d1834ac027fa1b17e44d3827ef"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/fold.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/fold.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "e3517b3586f9315e4c91998eb3a2975a1f34feab",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "07f8442b9d8d4c5b86b47e82d2961793a4e216c648fcf490f24aad1a3cdb37e6"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/ingest.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/ingest.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "9387ace3431d46748905755574c9955e5264d225",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "5c0a832e1a4739464b21c566452c4928fe7222fdf6db4bfe962be2870457b928"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/observe.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/observe.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "da1ee83943f7a7d5ec3209c6bb09c443c340a588",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "c1d66d7e3b9765c9c9ee432bc67f882bb01b1221b7a20b05518e4b47f9e92e62"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/reingest.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/reingest.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "7a7371f94169ffdf790bcf13ce77613591bb0afb",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "106b827ab9d1e243b0bdab8d020c837e7f8e3d0ea500dff2a082ee54d568994e"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/store.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/store.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "876283ec220892f5cd519a2a4fd23e67c2722ae6",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "f0fc400bd13ed29cec96af786d75caf2691e27e390608c3a1e62fdce2730ab1c"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/subtypes.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/subtypes.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "57f74b22449c308cae8e485d8119499959ee8454",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "bd18904af451f8b27369509227b7461ea6803612f7762b61ce56318340529fa5"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice1/validity.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/validity.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "3edefa4c879e7fa1f840ffb03044a6ee912605c8",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "7a1859d9eabdb5d1c4b73fb0049c6abea2af87e807e7a3dc58848407f6a7f04a"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/__init__.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "d3037663a145f08b84551c284dd994746c99e4172682ecd371d98bba2b029051"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/__main__.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "e5cad20844decf578cd8f9417e3f557a666c4c01dff49962f093974857a8a9b4"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/_slice1_path.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "91a5f6d9aaf96be3e48c663cdd1eea2f7b44a410da22e483d0b0dd898d0230c8"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/checkpoint.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "9a2f50a055595b3fe28a70e19e629f2771bdc7d181fdd7019ad0fa2b9bf95b1a"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/dependency_pin.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "502b533f1b1ad0c9d5f6634193c84eb06a68e69a56c7a19c627b6e8e33ff1857"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/frontier.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "9ec7598562e8a7b17d344415d01c0de388832f2acc4c47c35d85b210f5081d66"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/manifest.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "adcbab78ce79ef88d55973668954a81843d1cf806351270acb60a2226097264e"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/projector.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "0f2663b939e52bab4bdb3bf23ffa43259e0f1bb4661716d27d81a2fe73c1a043"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/recovery.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "bb7274b0bed499f41266eb5864245117970fdb5f9074662e5fd50384f3f86b6a"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/replay.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b80dcbfcec6e80736871c68280a7afdc6c3aa142e7f4f7490ce137ab838d6699"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/staleness.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "9aa6daef9bbeeab1ded279609f5bb97feaa33859cce6e51051a6ab7276fe40c8"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice2/validate.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "2a466c140fe35cfa26f029dfc42d0cac6b37142ee3311e286f4cc376a0ba3c12"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice4/__init__.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "047688416d3897f3bd33fcba04866298f34f8df2a6940bb68e0bed688607815b"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice4/__main__.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "c88d4675d05181898bc504af64cd8e8aad33f77e48de2ecb7088ffd72a471f26"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice4/_slice1_path.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "9a7c97414cba4478c855a6297c0f22afcd2ddb3ac8da31bfdd0b0082462a5892"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice4/authority_profile.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b5d001f1d1ece15fd404e1ad75414470f954bf05825ef9ded26f9a0c34bb549f"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice4/cli.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "a78cf652b63701e0f6760f846f6454116e5608a99bdc2d3a4af29f7f4cc24a45"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice4/corpus_gate.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "51673bd418e659382b50f648022d48b070a0ccafebb2cf793e4e7a4ef70f9853"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice4/dependency_pin.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "ebf828293c7f807d2c70e2c724d302f97227398d1398d8a0d08ece327aa3ebde"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice4/dispatch.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "42fa990eb9e020f7440363f3be735a0b56e97c06535dee488a48d224b73251c3"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice4/state.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "2f7fba150babeeeef3f116bef2b557572cd17210eccf27c14e1e5810e5a317b9"
+    },
+    {
+      "target_path": "src/blackbox_vnext/slice4/trusted_corpus.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "304a7a206aafc9e4991ce4b2ac2da460962d540efee341b8f31490d66434091b"
+    },
+    {
+      "target_path": "src/blackbox_vnext/store.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/store.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "876283ec220892f5cd519a2a4fd23e67c2722ae6",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "f0fc400bd13ed29cec96af786d75caf2691e27e390608c3a1e62fdce2730ab1c"
+    },
+    {
+      "target_path": "src/blackbox_vnext/subtypes.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/subtypes.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "57f74b22449c308cae8e485d8119499959ee8454",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "8141c9f556fdde6d199850dde5ddb3ee0600624a7825d71754d485c378b6243d"
+    },
+    {
+      "target_path": "src/blackbox_vnext/validity.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice1/bbx/validity.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "3edefa4c879e7fa1f840ffb03044a6ee912605c8",
+      "product_role": "canonical offline runtime",
+      "compatibility_impact": "new vNext API; imports consolidated",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "7a1859d9eabdb5d1c4b73fb0049c6abea2af87e807e7a3dc58848407f6a7f04a"
+    },
+    {
+      "target_path": "STATUS.md",
+      "action": "transform",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "STATUS.md",
+      "source_ref": "011680e9cfda68e65010a4e402a269fa871ccf20",
+      "source_blob_sha": "dff27d99a6fa94f77f08a751bf9cf367b30ec246",
+      "product_role": "legacy compatibility contract/history",
+      "compatibility_impact": "vNext-aware evolution; original retained by v1.0.0/legacy/v1",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "09ea244d80936caf68e10cd937bb8789db92f6810367f5ee7aeef862968d1bb6"
+    },
+    {
+      "target_path": "tests/test_acceptance.py",
+      "action": "transform",
+      "source_repository": "LeiD215/hermes-nas-experiment",
+      "source_path": "docs/ai-review-drafts/Blackbox-vNext-渐进失效/reference-implementation-slice5/tests/test_mandatory_scenarios.py",
+      "source_ref": "0f9c149",
+      "source_blob_sha": "a86e0c37dd80cde01c20d259e3a51a999bb6fd71",
+      "product_role": "cross-slice acceptance suite",
+      "compatibility_impact": "product-local imports",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "fd2ec030ad6d2c719ce840a76dde7e74581f3cf089dbfc2574b9c6bb81206eae"
+    },
+    {
+      "target_path": "tests/test_gate_slice4_binding.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "8534a79184c76eaa10fd84b740106460371723ea90c6e7bc2295a5f6c503c9d9"
+    },
+    {
+      "target_path": "tests/test_legacy_preservation.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "45a31f026181b4c32e52910abeb616e9079e4945f73157cfe2f9766b93f69e82"
+    },
+    {
+      "target_path": "tests/test_lf_checkout_domain.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "2eadc83cb1e4eb740fc14f89195b61d338a34c87b6bbbc7138469ca01bf07d1a"
+    },
+    {
+      "target_path": "tests/test_manifest_coverage.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "91414436f8c5750cb7bfc60d365be6641097add2f076e0a4c0f6b1804afed59d"
+    },
+    {
+      "target_path": "tests/test_portable_init.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "eeaefbc48040e657353f5e9533dec0ff6126ea1ccb9327d639bffca8343e6b7c"
+    },
+    {
+      "target_path": "tests/test_prior_authorization_binding.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "86097fb7e6c8ec85b071e001f6040c21fd04c33c73ecf356894aaeae2fc6de57"
+    },
+    {
+      "target_path": "tests/test_product_contract.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "b9a57907ab4024d1b084e173a6ef78fe8283d600adef04fecf234834468dc85a"
+    },
+    {
+      "target_path": "tests/test_requirement_schema.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "644ac89300341943e2690ffea7e3ce4c350bbf3fa958f0df29eec19055f3da4b"
+    },
+    {
+      "target_path": "tests/test_runtime_corrections.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "43ea4d9ea68ce5e8c80a47a4b2cb8288fe4acfcbbd62c01268eb2002d5905a1d"
+    },
+    {
+      "target_path": "tests/test_self_verification_cli.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "28b1fd4ac8cf44621770ee5ebf91907b517dc3db4a0d6ab306588165f2ba24d4"
+    },
+    {
+      "target_path": "tests/test_slice0_product_canonical.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "99f91bd2ff65cbadf961206f425354448206a91f27de839055485032cc263421"
+    },
+    {
+      "target_path": "tests/test_slice1_product_semantics.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "df6ec62b37edc8098a4d0b0d8298bc2c06e77c43698c3e2cb8f6ac76b8464c04"
+    },
+    {
+      "target_path": "tests/test_slice2_product_dependency.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "84111102cb281703e8e098d06ffb883d5056e8ee6272bf1f8b49261ec17703cd"
+    },
+    {
+      "target_path": "tests/test_slice2_product_semantics.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "4f2011f448efabde14675420329ffa01143f7dad88e75be5ff946654970e8f5b"
+    },
+    {
+      "target_path": "tests/test_slice4_product_dependency.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "0a7c644cc70d2a271e2fa6e7370514a954adebea6c54e6ceb807434122919e44"
+    },
+    {
+      "target_path": "tests/test_slice4_product_semantics.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "9bd14cab72548994eba19d71a84c5785507bad9ccc7fdc0d4a75e5d50046b16e"
+    },
+    {
+      "target_path": "tests/test_slice5_product_dependency.py",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "e411e64fda8a7ddd384e11eb164e74307ed0cfabf40d64cb2a2bc7cb3e1dc8f1"
+    }
+  ]
+}
