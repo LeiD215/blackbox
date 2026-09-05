@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Blackbox vNext Reference Manifest Schema (Slice 0)",
+  "description": "Enumerable event-id + content-hash manifest (not just aggregate hash). Used in checkpoint + observation.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["event_id", "content_hash"],
+    "properties": {
+      "event_id": { "type": "string", "pattern": "^evt-[0-9a-f]{32}$" },
+      "content_hash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }
+    }
+  }
+}

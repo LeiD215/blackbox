@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Blackbox vNext Reference Observation Profile Schema (Slice 0)",
+  "description": "Portable governed-path / ignore profile (sensor config). .blackbox/** fixed exclusion. baseline pins profile identity/hash.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "fixed_exclusions",
+    "governed_paths",
+    "ignored_paths"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.3.2"
+    },
+    "fixed_exclusions": {
+      "type": "array",
+      "description": "FIXED exclusions (not user-overridable in reference profile).",
+      "items": {
+        "type": "string"
+      },
+      "const": [
+        ".blackbox/**"
+      ]
+    },
+    "governed_paths": {
+      "type": "array",
+      "description": "Glob patterns identifying governed paths under observation.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ignored_paths": {
+      "type": "array",
+      "description": "Glob patterns explicitly ignored (within governed_paths).",
+      "items": {
+        "type": "string"
+      }
+    },
+    "profile_identity_sha256": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "description": "sha256 over RFC8785 canonical bytes of the complete observation-profile object with `profile_identity_sha256` omitted (including schema_version), no trailing LF. Format: 'sha256:' + 64 lowercase hex chars. Pinned in observation baseline."
+    }
+  }
+}

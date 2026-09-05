@@ -1,0 +1,111 @@
+{
+  "schema_version": "0.3.2",
+  "description": "Complete minimal subtype registry for Blackbox vNext reference implementation. Each registered subtype machine-defines: allowed core type(s), allowed receipt_class(es), semantic (state_transition|support|non_state), parent rule/cardinality, genesis_allowed. Invalid type/subtype/receipt_class combination => invalid receipt (NOT UNCLASSIFIED; UNCLASSIFIED reserved for unregistered subtype). Materialized from Design v0.1.4 D.3.",
+  "registry": {
+    "dispatch": {
+      "allowed_type": ["TASK"],
+      "allowed_receipt_class": ["claim"],
+      "semantic": "state_transition",
+      "parent_cardinality": "exactly_one",
+      "genesis_allowed": true
+    },
+    "execution-result": {
+      "allowed_type": ["TASK"],
+      "allowed_receipt_class": ["claim"],
+      "semantic": "state_transition",
+      "parent_cardinality": "exactly_one",
+      "genesis_allowed": false
+    },
+    "completion-claim": {
+      "allowed_type": ["TASK"],
+      "allowed_receipt_class": ["claim"],
+      "semantic": "state_transition",
+      "parent_cardinality": "exactly_one",
+      "genesis_allowed": false
+    },
+    "acceptance": {
+      "allowed_type": ["DECISION"],
+      "allowed_receipt_class": ["claim"],
+      "semantic": "state_transition",
+      "parent_cardinality": "exactly_one",
+      "genesis_allowed": false
+    },
+    "authority-change": {
+      "allowed_type": ["CHANGE"],
+      "allowed_receipt_class": ["claim"],
+      "semantic": "state_transition",
+      "parent_cardinality": "exactly_one",
+      "genesis_allowed": true
+    },
+    "correction": {
+      "allowed_type": ["CHANGE"],
+      "allowed_receipt_class": ["claim"],
+      "semantic": "state_transition",
+      "parent_cardinality": "exactly_one",
+      "genesis_allowed": false
+    },
+    "reclassify": {
+      "allowed_type": ["CHANGE"],
+      "allowed_receipt_class": ["claim", "observed"],
+      "semantic": "non_state",
+      "parent_cardinality": "zero",
+      "genesis_allowed": true,
+      "notes": "Append-only corrective record. References original UNCLASSIFIED via prior_refs.supports + extensions.x_reclassifies. Only the associated replacement event participates in fold."
+    },
+    "resolution": {
+      "allowed_type": ["CHANGE"],
+      "allowed_receipt_class": ["claim"],
+      "semantic": "state_transition",
+      "parent_cardinality": "one_or_more",
+      "genesis_allowed": false,
+      "notes": "Names all conflicting heads in prior_refs.parent; produces new resolved head."
+    },
+    "checkpoint-recorded": {
+      "allowed_type": ["CHANGE"],
+      "allowed_receipt_class": ["claim"],
+      "semantic": "non_state",
+      "parent_cardinality": "zero",
+      "genesis_allowed": true
+    },
+    "orphan-observed": {
+      "allowed_type": ["CHANGE"],
+      "allowed_receipt_class": ["observed"],
+      "semantic": "non_state",
+      "parent_cardinality": "zero",
+      "genesis_allowed": true
+    },
+    "self-verification": {
+      "allowed_type": ["VERIFICATION"],
+      "allowed_receipt_class": ["self-verification"],
+      "semantic": "support",
+      "parent_cardinality": "zero",
+      "genesis_allowed": false
+    },
+    "verification": {
+      "allowed_type": ["VERIFICATION"],
+      "allowed_receipt_class": ["claim", "self-verification"],
+      "semantic": "support",
+      "parent_cardinality": "zero",
+      "genesis_allowed": false
+    },
+    "independent-verification": {
+      "allowed_type": ["VERIFICATION"],
+      "allowed_receipt_class": ["independent-verification"],
+      "semantic": "support",
+      "parent_cardinality": "zero",
+      "genesis_allowed": false
+    },
+    "reconciliation": {
+      "allowed_type": ["CHANGE"],
+      "allowed_receipt_class": ["claim", "observed"],
+      "semantic": "state_transition",
+      "parent_cardinality": "at_most_one",
+      "genesis_allowed": true,
+      "notes": "May create genesis recorded head for orphan subject (zero parent) when no prior canonical head exists; otherwise references current head. Binds actual observed post-state + observed_at/recorded_at/reason; does not retroactively fabricate authorization/verification."
+    }
+  },
+  "core_types": ["DECISION", "TASK", "VERIFICATION", "CHANGE"],
+  "receipt_classes": ["claim", "observed", "self-verification", "independent-verification"],
+  "untagged_subtype_semantics": "UNCLASSIFIED / no-effect (event retained for historical evidence only, cannot participate in effect eligibility or fold until reclassify path produces a registered-type/subtype replacement).",
+  "invalid_combination_semantics": "If type/subtype/receipt_class is registered but the combination is not in this registry's allowed_type x allowed_receipt_class, the event is an invalid receipt (not UNCLASSIFIED)."
+}

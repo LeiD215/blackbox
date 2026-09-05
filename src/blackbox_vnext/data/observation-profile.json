@@ -1,0 +1,7 @@
+{
+  "schema_version": "0.3.2",
+  "fixed_exclusions": [".blackbox/**"],
+  "governed_paths": ["src/**/*.py", "*.md"],
+  "ignored_paths": [],
+  "profile_identity_sha256": "sha256:ffcc14e20126c2ccd1e2f846a606fc20e6aadf3a25f3c64d7170ae4fb4282d7f"
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Blackbox vNext Reference Event Schema (Slice 0)",
+  "description": "Materialized from Design v0.1.4 + Formal Spec v0.3.2. Slice 0: schema/fixtures only; no validator logic. NOTE: JSON Schema alone cannot enforce all FORMAT rules (lone surrogate, duplicate key, safe-integer range, RFC8785 sort). These are pre-schema ingest constraints in FORMAT.md (F.3).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "content_hash",
+    "actor",
+    "type",
+    "subtype",
+    "receipt_class",
+    "subject",
+    "recorded_at",
+    "prior_refs"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.3.2"
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^evt-[0-9a-f]{32}$"
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "actor": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "enum": [
+        "DECISION",
+        "TASK",
+        "VERIFICATION",
+        "CHANGE"
+      ]
+    },
+    "subtype": {
+      "type": "string",
+      "minLength": 1,
+      "description": " REQUIRED per FORMAT F.6 (machine taxonomy)."
+    },
+    "receipt_class": {
+      "enum": [
+        "claim",
+        "observed",
+        "self-verification",
+        "independent-verification"
+      ]
+    },
+    "subject": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "prior_refs": {
+      "type": "object",
+      "required": [
+        "parent",
+        "supports"
+      ],
+      "properties": {
+        "parent": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^evt-[0-9a-f]{32}$"
+          }
+        },
+        "supports": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^evt-[0-9a-f]{32}$"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "extensions": {
+      "type": "object"
+    },
+    "body": {
+      "type": "string"
+    }
+  }
+}

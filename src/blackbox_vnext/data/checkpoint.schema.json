@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Blackbox vNext Reference Checkpoint Schema (Slice 0)",
+  "description": "Derived, non-authority recovery index. MUST NOT prove authorization/completion/acceptance/scope. Schema-only; no projector/generator in Slice 0.",
+  "type": "object",
+  "required": ["schema_version", "header", "input_event_manifest", "frontier", "source_event_refs"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string", "const": "0.3.2" },
+    "header": {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": { "const": "DERIVED/NON-AUTHORITY_RECOVERY_INDEX" },
+        "checkpoint_id": { "type": "string", "pattern": "^cp-[0-9a-f]{64}$" },
+        "as_of_event_count": { "type": "integer", "minimum": 0 },
+        "generator_identity": { "type": "string" },
+        "framework_version": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "input_event_manifest": {
+      "type": "array",
+      "description": "Enumerable manifest: list of {event_id, content_hash} tuples (not just a Merkle root).",
+      "items": {
+        "type": "object",
+        "required": ["event_id", "content_hash"],
+        "properties": {
+          "event_id": { "type": "string", "pattern": "^evt-[0-9a-f]{32}$" },
+          "content_hash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }
+        }
+      }
+    },
+    "frontier": {
+      "type": "object",
+      "description": "Per-subject head event refs (subject -> head event_id).",
+      "additionalProperties": { "type": "string", "pattern": "^evt-[0-9a-f]{32}$" }
+    },
+    "source_event_refs": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^evt-[0-9a-f]{32}$" }
+    },
+    "manifest_integrity_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+  }
+}

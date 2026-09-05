@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blackbox-vnext"
+version = "2.0.0.dev0"
+description = "Portable canonical record, recovery, authority and readback reference runtime"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+blackbox-vnext = "blackbox_vnext.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+blackbox_vnext = ["data/*.json", "data/*.md"]

@@ -1,0 +1,10 @@
+{
+  "schema_version": "0.3.2",
+  "kind": "blackbox-vnext-slice4-bootstrap-profile",
+  "principals": ["human:owner"],
+  "capabilities": [
+    {"action": "task.dispatch", "surface": "project:reference"},
+    {"action": "authority.change", "surface": "project:reference"}
+  ],
+  "notes": "Static product profile only; this file does not create a canonical authority event."
+}

@@ -1,0 +1,5 @@
+src/blackbox_vnext/data/*.json text eol=lf
+src/blackbox_vnext/**/*.py text eol=lf
+schemas/*.json text eol=lf
+/CHANGELOG.md -text
+/assets/STATUS_TEMPLATE.md -text
