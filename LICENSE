@@ -1,0 +1,451 @@
+Blackbox Community License 1.0 (BCL 1.0)
+Version 1.0
+
+Note on legal-review status: This License is provided to support the
+Blackbox v2.0.0 release. Qualified legal review of this License has
+been deferred and is not a precondition to release, use, modification,
+or non-commercial redistribution. Qualified legal review remains
+recommended before commercial licensing, enforcement, or other
+high-stakes licensing events. This License is not legal advice.
+
+Copyright (c) <YEAR> LeiD215 / Blackbox contributors. All rights reserved.
+
+
+Preamble (non-binding statement of intent)
+
+  This license is intended to make Blackbox available for personal,
+  educational, academic research, non-commercial research, nonprofit use,
+  internal productivity / automation / research / evaluation (including by
+  for-profit organizations), and non-commercial modification and
+  redistribution, while preserving copyright and attribution, restricting
+  commercial offerings where Blackbox is a Material Component, and
+  reserving a separate commercial-license path to the project owner. The
+  preamble is descriptive; it is not itself a grant or a prohibition.
+
+
+SECTION 1. DEFINITIONS
+
+  1.1 "Software" means the Blackbox software, in source and binary form,
+      made available under this license.
+
+  1.2 "Commercial Use" means use of the Software, in whole or in part,
+      in connection with any of:
+
+        (a) Sale / sublicensing - selling, reselling, or sublicensing the
+            Software or any Derivative Work, or selling access to it, for
+            monetary or other material consideration;
+
+        (b) Paid SaaS / hosted service - operating the Software (or a
+            Derivative Work, or functionality substantially provided by the
+            Software) as a service that third parties access for a fee,
+            where the Software is a Material Component of what is offered;
+
+        (c) Paid consulting / paid service - charging third parties for
+            consulting, integration, customization, training, or support
+            where the Software is a Material Component of what is offered;
+
+        (d) Commercial product integration - bundling or incorporating the
+            Software or a Derivative Work into a commercial product, or
+            using them internally as a Material Component of a commercial
+            product or service.
+
+      "Commercial Use" does NOT include Internal Use (Section 1.7) where
+      the Software is not a Material Component of any paid offering, and
+      does NOT include personal side work where the Software is incidental.
+
+  1.3 "Non-Commercial Use" means use of the Software for purposes that
+      are not Commercial Use, including without limitation personal use,
+      education, academic research, non-commercial research, nonprofit use,
+      government / public-sector use in non-revenue contexts, and Internal
+      Use by any party - including for-profit - where the Software is not
+      a Material Component of any paid offering.
+
+  1.4 "Distribution" means any act of making copies of the Software or a
+      Derivative Work available to a third party, including but not
+      limited to uploading to a public code-hosting platform; publishing
+      in a software registry; bundling into a larger distribution; sending
+      as part of a consultancy deliverable; offering as a downloadable
+      artifact; making available on a network-accessible server from which
+      third parties can fetch it; and providing it as part of a paid or
+      unpaid training program (the latter only if not already classified
+      as Commercial Use).
+
+      Internal use within a single Organization by employees and
+      contractors acting on its behalf is NOT Distribution; it is Use.
+
+  1.5 "Derivative Work" (also "Modification") means any work that
+      incorporates all or a substantial part of the Software, including
+      translations, ports, adaptations, or modifications of the source
+      code; works that statically or dynamically link to the Software;
+      works that bundle the Software as a sub-component; and works that
+      expose the Software's functionality through an API such that the
+      Software is the primary engine of the combined system.
+
+      Mere aggregation in a collection (e.g. a curated list of unrelated
+      tools) does not by itself create a Derivative Work, provided that
+      the Software remains an independent work and is distributed with
+      this License intact.
+
+  1.6 "Attribution" identifies Blackbox as the source/origin of the
+      Software or Derivative Work. It does NOT require making complete
+      corresponding source code available. "Attribution" means all of:
+
+        (a) an unmodified copyright notice identifying Blackbox /
+            LeiD215 (or successor entity, if any, as recorded in NOTICE)
+            as the source;
+
+        (b) the full text of this License;
+
+        (c) a clear statement of any Material Modifications made by the
+            distributor (date, scope, and identifier of the modified
+            version);
+
+        (d) in the case of a Derivative Work distributed as source, a
+            prominent pointer (e.g. a NOTICE file or README section)
+            identifying the upstream Blackbox version from which the
+            Derivative Work was derived;
+
+        (e) permissible factual naming wording per Section 3.5.
+
+  1.7 "Use" (also "Internal Use" when performed internally) means
+      executing the Software, interacting with its outputs, training or
+      evaluating on its outputs, and similar activities performed
+      internally within an Organization or by an Individual, without
+      making the Software, its outputs, or substantially Blackbox-derived
+      functionality available to a third party.
+
+  1.8 "Organization" means any legal person other than an Individual,
+      including corporations, partnerships, LLCs, non-profits,
+      government bodies, academic institutions, and informal collectives
+      acting in a coordinated capacity.
+
+      "Individual" means a natural person acting in a personal capacity
+      and not on behalf of an Organization.
+
+  1.9 "Material Component" means a component, module, or set of
+      capabilities whose absence would materially change the value,
+      function, or commercial appeal of the larger product, service, or
+      offering. Whether the Software is a Material Component of a paid
+      offering is determined by an objective reasonable-person test
+      applied to the paid offering as marketed and delivered, not by
+      internal-architecture labels alone.
+
+      The Software is NOT a Material Component of:
+
+        - internal productivity / automation / research / evaluation
+          tools where the Software is one of many internal dependencies;
+        - a paid deliverable where the Software is incidental and a
+          reasonable customer would not consider Blackbox to be the
+          principal value of what is offered;
+        - an internal QA / testing pipeline that runs against other
+          software without Blackbox being externally observable to the
+          customer.
+
+      The Software IS a Material Component of:
+
+        - a paid hosted service whose headline capability is provided by
+          Blackbox;
+        - a paid product whose marketing, documentation, or pricing
+          depends on Blackbox functionality;
+        - a Derivative Work that is itself the principal thing being
+          sold or licensed.
+
+  1.10 "Project Owner" means LeiD215 or a successor entity designated in
+       the NOTICE file accompanying the Software.
+
+  1.11 "DCO" means the Developer Certificate of Origin version 1.1 (or
+       its successor), under which contributors certify their right to
+       submit contributions.
+
+  1.12 "Patent Grant". This License does NOT include any operative
+       patent grant. No license under any patent is granted, expressly or
+       by implication, estoppel, or exhaustion, by this License.
+
+
+SECTION 2. PERMITTED USES
+
+  Subject to the conditions in Section 3, the following are permitted:
+
+  2.1 Personal use of the Software by an Individual for non-commercial
+      purposes.
+
+  2.2 Education: use by Individuals and educational institutions in
+      coursework, teaching, training material, and student projects.
+      No Commercial Use arises.
+
+  2.3 Research: use for academic research, non-commercial research, and
+      personal research, including reproduction of experimental results
+      in non-commercial publications, dissertations, and pre-prints.
+      No Commercial Use arises.
+
+  2.4 Nonprofit use: use by a registered non-profit organization in
+      pursuit of its non-profit mission, provided no paid offering of
+      access to the Software results.
+
+  2.5 Internal Use: use by any party - Individual or Organization,
+      including for-profit - for productivity, automation, research,
+      evaluation, QA, or testing, where the Software is not a Material
+      Component of any paid offering.
+
+  2.6 Personal side work: use by an Individual for personal commercial
+      side work where the Software is incidental and not a Material
+      Component of the paid deliverable or service.
+
+  2.7 Non-commercial modification and Distribution of the Software and
+      Derivative Works, subject to the conditions in Section 3.
+
+
+SECTION 3. CONDITIONS ON PERMITTED USES
+
+  Every Distribution of the Software or a Derivative Work must include,
+  in a place reasonably discoverable by each recipient:
+
+  3.1 An unmodified copyright notice identifying the Project Owner as
+      the source.
+
+  3.2 The full text of this License (no summaries, no external links in
+      place of the text).
+
+  3.3 If the distributed work is a Derivative Work, a clear and dated
+      modification marker, identifying the upstream Blackbox version
+      from which the Derivative Work was derived.
+
+  3.4 Any NOTICE file present in the upstream distribution, carried
+      through unmodified.
+
+  3.5 Permissible factual naming wording. The Distributor MAY use
+      "Based on Blackbox" or "Powered by Blackbox" for truthful
+      attribution of source. The Distributor MUST NOT use wording that
+      implies official endorsement, affiliation, or an "Official
+      Blackbox" status without prior written permission from the
+      Project Owner.
+
+  NOTE: "Attribution" under this Section means identifying Blackbox as
+  the source/origin. It does NOT impose a mandatory obligation to
+  disclose, publish, or otherwise make available complete corresponding
+  source code of the Software or any Derivative Work, except where such
+  obligation arises from a separate written agreement or from
+  applicable law independent of this License.
+
+
+SECTION 4. PROHIBITED USES
+
+  Unless you have obtained a separate written commercial license from
+  the Project Owner (Section 7), you MUST NOT:
+
+  4.1 Sell, resell, or sublicense the Software or any Derivative Work,
+      or sell access to it, for monetary or other material consideration.
+
+  4.2 Operate the Software (or a Derivative Work, or functionality
+      substantially provided by the Software) as a paid SaaS, hosted
+      service, paid managed service, paid training, paid consulting,
+      paid support, paid integration, or any similar paid offering, in
+      any pricing model including subscription, per-call, metered,
+      freemium-with-paid-tier, or otherwise, where the Software is a
+      Material Component of what is offered.
+
+  4.3 Bundle or incorporate the Software or a Derivative Work into a
+      commercial product, or use them internally as a Material Component
+      of a commercial product or service.
+
+  4.4 Structure an arrangement that uses Section 5.3 (cloud-cost
+      reimbursement) as a pretext to operate a paid hosted service.
+      Section 5.3 is narrow; disguised commercial hosting falls under
+      Section 4.2.
+
+  4.5 Use the names "Blackbox", "LeiD215", or any contributor name to
+      imply endorsement of any product, service, or Derivative Work
+      without the Project Owner's prior written consent. Factual
+      attribution per Section 3.5 is permitted.
+
+
+SECTION 5. NON-COMMERCIAL EXCEPTION CLARIFICATIONS
+
+  The following clarifications apply to the definitions in Section 1
+  and the prohibitions in Section 4. They are binding to the extent
+  they clarify those Sections. They are NOT exhaustive.
+
+  5.1 Donations, sponsorships, and grants accepted by a downstream user
+      are NOT Commercial Use, provided the donation/sponsorship/grant
+      is not a precondition for receiving the Software and is not paid
+      in exchange for access to the Software.
+
+  5.2 Use by a registered non-profit organization in pursuit of its
+      non-profit mission is Non-Commercial Use, provided no paid
+      offering of access to the Software results.
+
+  5.3 Cloud-cost, infrastructure-cost, or electricity-cost reimbursement
+      is not Commercial Use, provided that:
+
+        (a) the reimbursement is limited to documented out-of-pocket
+            infrastructure cost;
+
+        (b) the recipient does not profit from the reimbursement;
+
+        (c) there is no commercial service intent (i.e. the
+            reimbursement is not a mechanism by which a third party pays
+            for access to a hosted Software-as-a-Service);
+
+        (d) the arrangement does not amount to disguised commercial
+            hosting.
+
+      This Section 5.3 is narrow; see Section 4.4.
+
+  5.4 Hackathon prizes and similar awards are not Commercial Use with
+      respect to the Software; they are compensation for participation,
+      not for the Software itself.
+
+  5.5 Government and inter-governmental use in a non-revenue context is
+      Non-Commercial Use.
+
+  5.6 Personal side-gig use by an Individual is Commercial Use under
+      Section 1.2(c) if the Software is a Material Component of the paid
+      deliverable. If the Software is incidental, the use is permitted
+      under Section 2.6.
+
+  5.7 Education, academic research, non-commercial research, and
+      nonprofit use are permitted under Sections 2.2 / 2.3 / 2.4
+      respectively. Nothing in this Section 5 expands Commercial Use.
+
+
+SECTION 6. CONTRIBUTIONS
+
+  6.1 Every contribution to the Software MUST carry a Signed-off-by
+      line, in the form:
+
+        Signed-off-by: Contributor Name <contributor@example.com>
+
+      certifying the contributor's right to submit the contribution
+      under the DCO 1.1 text (or its successor).
+
+  6.2 By submitting a contribution, the contributor grants the Project
+      Owner a sufficient license to:
+
+        (a) incorporate the contribution into the Software under this
+            License;
+
+        (b) relicense the contribution under a separate commercial
+            license to a third party under Section 7;
+
+        (c) relicense the contribution under any future version of the
+            Blackbox community license.
+
+  6.3 No CLA is required at contribution time. The current contribution
+      model is DCO only. A CLA may be introduced in the future only if a
+      concrete commercial-relicensing program is contemplated; such a
+      future CLA would be a separate instrument and is not part of this
+      License.
+
+
+SECTION 7. COMMERCIAL LICENSE RESERVATION
+
+  7.1 The Project Owner reserves the sole right to grant separate
+      written commercial licenses that permit activities prohibited
+      under Section 4.
+
+  7.2 Nothing in this License shall be construed as an offer or
+      commitment to grant any such commercial license.
+
+  7.3 No implication is made that any commercial license currently
+      exists or will be made available.
+
+  7.4 If the Project Owner ceases to maintain this License and does
+      not offer a commercial license, existing licensees retain their
+      rights under the version of this License they received.
+
+
+SECTION 8. TRADEMARKS
+
+  8.1 This License does NOT grant any right to use the trade names,
+      trademarks, service marks, or product names of the Project Owner,
+      except for factual Attribution of source as required by Section 3
+      and the truthful-naming allowance in Section 3.5.
+
+  8.2 Permitted factual naming:
+
+        - "Based on Blackbox"
+        - "Powered by Blackbox"
+
+      are permitted for truthful attribution of source.
+
+  8.3 Prohibited naming:
+
+        - "Official Blackbox"
+        - "Blackbox Certified"
+        - "Endorsed by Blackbox"
+        - other wording implying official endorsement, affiliation, or
+          "Official Blackbox" status
+
+      require prior written permission from the Project Owner.
+
+  8.4 Fork and derivative naming is permitted so long as the fork or
+      derivative is clearly named differently from "Blackbox" and the
+      factual attribution in Section 3 is preserved.
+
+  8.5 No broader trademark policy is included in this License.
+      Registration, infringement, and licensing matters beyond the
+      truthful-attribution allowance are left to separate trademark-law
+      instruments, if any.
+
+
+SECTION 9. TERMINATION
+
+  9.1 All rights granted to you under this License terminate
+      automatically upon any material breach of Sections 2, 3, 4, or 5
+      that you do not cure within 30 days after written notice from
+      the Project Owner.
+
+  9.2 Upon termination, you MUST cease all Distribution and Commercial
+      Use of the Software and any Derivative Works in your possession
+      or control. Existing copies already distributed to recipients
+      prior to termination are not retroactively revoked.
+
+
+SECTION 10. WARRANTY DISCLAIMER
+
+  THE SOFTWARE IS PROVIDED "AS IS" AND THE PROJECT OWNER AND
+  CONTRIBUTORS DISCLAIM ANY AND ALL WARRANTIES, EXPRESS OR IMPLIED,
+  INCLUDING WITHOUT LIMITATION WARRANTIES OF MERCHANTABILITY, FITNESS
+  FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND ANY WARRANTY THAT
+  THE SOFTWARE WILL OPERATE UNINTERRUPTED OR BE ERROR-FREE.
+
+
+SECTION 11. LIMITATION OF LIABILITY
+
+  11.1 TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT
+       SHALL THE PROJECT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY
+       INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR
+       PUNITIVE DAMAGES (INCLUDING LOST PROFITS, LOST DATA, BUSINESS
+       INTERRUPTION, OR PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES)
+       ARISING OUT OF OR IN CONNECTION WITH THE SOFTWARE, WHETHER IN
+       AN ACTION OF CONTRACT, TORT, OR OTHERWISE, EVEN IF ADVISED OF
+       THE POSSIBILITY OF SUCH DAMAGES.
+
+  11.2 Governing law, venue, and any jurisdiction-specific tail of the
+       warranty / liability language are NOT specified in this License.
+       These items are deferred to qualified legal review and shall be
+       incorporated into the final License by qualified counsel.
+       Qualified legal review of this License has been deferred and is
+       not a precondition to use, modification, or non-commercial
+       redistribution under this License; until qualified counsel
+       completes such review and the user adopts revised text, no
+       governing-law or venue clause in this License is intended to be
+       operative.
+
+
+SECTION 12. MISC
+
+  12.1 If any provision of this License is held unenforceable, the
+       remaining provisions remain in full force and effect.
+
+  12.2 This License constitutes the entire agreement between you and
+       the Project Owner with respect to the Software and supersedes
+       all prior or contemporaneous understandings on the subject.
+
+  12.3 Failure to enforce any provision is not a waiver of the right
+       to do so later.
+
+  12.4 You may not assign this License or any rights under it without
+       the Project Owner's prior written consent.
+
+END OF TERMS
