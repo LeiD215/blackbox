@@ -3,6 +3,28 @@
 不是全程实时维护的 STATUS。
 -->
 
+
+# Blackbox vNext - STATUS
+
+## Current vNext state (2026-09-06)
+
+- vNext productization validation: **PASS** (Windows suite, Linux vm2, installed/no-Git F2, Slice2/4/5 guards, manifest coverage, CRLF fail-closed).
+- Official Codex final migration candidate review: **REVIEW PASS** (round 5; evidence commit `9093ca7d823d6d1e2ffe59efc5ab49d204417565`, L1-L4 all PASS).
+- Remote `vnext` migration branch: **CREATED** at `e344ef1f913112d661365a2ad3cb9ddb5dec1bf6` (tree `35f8fed246008a7009dae25b4bf0c094ee5a81e3`) via USER-DIRECT push; coordinator independently re-verified remote state matches.
+- Default branch: still `main` (`011680e9cfda68e65010a4e402a269fa871ccf20`, tree `a049228cca4a9b75f77784fa56ae0ac646448548`). No default-branch switch has occurred.
+- Legacy preservation: `main`, `legacy/v1`, `v1.0.0` (annotated tag, peeled to `011680e9...`) all preserved unchanged. 16 historical product paths preserved byte-for-byte from the v1 baseline.
+- No v2 release tag created; no license added or decided; `pyproject.toml` version remains `2.0.0.dev0`.
+- Branch availability vs formal release: presence of remote `vnext` is a reviewed branch artifact, not a published release. Public release remains blocked until license status is explicitly resolved by the USER.
+- Next decision boundary (separate USER gates, NOT performed by this commit):
+  - adoption / default-branch switch from `main` to `vnext`;
+  - release/tag/license decision for v2.
+
+## Historical context - 2026-07-22 snapshot of blackbox Skill (preserved)
+
+The remainder of this file preserves the 2026-07-22 self-snapshot of the legacy blackbox Skill project as historical context. That snapshot predates the vNext migration work and is NOT current operational status. It is preserved byte-for-byte from the original 2026-07-22 content; do not interpret it as the present state of the `vnext` branch.
+
+--- BEGIN 2026-07-22 legacy snapshot (preserved as historical context) ---
+
 # 现状速览——blackbox Skill 项目本身
 
 ## 关键事实
@@ -75,3 +97,5 @@
 - [ ] 观察"交接文档索引"规则（ADR-0004）在更多真实项目中是否够用
 - [ ] 视情况决定要不要把 override-rules 项目的记录迁移到 blackbox 格式
 - [ ] 视情况理清 blackbox 与项目专属 Skill 的关系
+
+--- END 2026-07-22 legacy snapshot ---

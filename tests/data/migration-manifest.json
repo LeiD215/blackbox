@@ -660,7 +660,7 @@
         "product-tests"
       ],
       "release_payload": true,
-      "staged_sha256": "375c4574ee008d911fb71dd1cc4232e86cc97370d53bd7f1fd543eb237be4d15"
+      "staged_sha256": "aad535d4fab7e60a95dfa6673b783c93e46f86d415933714ac38a6a0da020b0c"
     },
     {
       "target_path": "schemas/checkpoint.schema.json",
@@ -1764,7 +1764,7 @@
         "product-tests"
       ],
       "release_payload": true,
-      "staged_sha256": "09ea244d80936caf68e10cd937bb8789db92f6810367f5ee7aeef862968d1bb6"
+      "staged_sha256": "784ee79008bde125c40f708511d2b1be383f3dad6ec5fcecd90e547fb31ad772"
     },
     {
       "target_path": "tests/test_acceptance.py",
@@ -2053,6 +2053,22 @@
       ],
       "release_payload": true,
       "staged_sha256": "e411e64fda8a7ddd384e11eb164e74307ed0cfabf40d64cb2a2bc7cb3e1dc8f1"
+    },
+    {
+      "target_path": "V1-TO-VNEXT-COMPATIBILITY.md",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "3e0191e859dc216dfa9c062cb2e58c48908d53463db3acc5bc35d823fd0f40b0"
     }
   ]
 }
