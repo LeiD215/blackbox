@@ -33,6 +33,7 @@ This document states the cutover matrix between Blackbox v1 (preserved at `legac
 
 ## Release / license boundary
 
-- `pyproject.toml` version is `2.0.0.dev0` (pre-release).
+- `pyproject.toml` version is `2.0.0` (local v2.0.0 release-prep successor; no Git tag or GitHub Release created yet).
 - The `vnext` successor tree carries BCL 1.0 at root `LICENSE`; license policy is positioned as Source Available / Community License. Qualified legal review is deferred and non-blocking per USER decision.
 - A formal v2.0.0 release/tag and any default-branch switch remain separate USER gates and are NOT performed by this cutover matrix.
+

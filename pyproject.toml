@@ -4,15 +4,17 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "blackbox-vnext"
-version = "2.0.0.dev0"
+version = "2.0.0"
 description = "Portable canonical record, recovery, authority and readback reference runtime"
 requires-python = ">=3.11"
+license = {text = "Blackbox Community License 1.0 (BCL 1.0)"}
 dependencies = []
 
 [project.scripts]
 blackbox-vnext = "blackbox_vnext.cli:main"
 
 [tool.setuptools]
+license-files = ["LICENSE"]
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]

@@ -644,7 +644,7 @@
         "product-tests"
       ],
       "release_payload": true,
-      "staged_sha256": "791b73d395d742b65a18c842896b2de6c865fd345183e171f0ba32e7e8c31c77"
+      "staged_sha256": "4b55f96ff102af318a42a4f106e795f8d8ba310635228a6d7a84af3639fdd8b8"
     },
     {
       "target_path": "README.md",
@@ -660,7 +660,7 @@
         "product-tests"
       ],
       "release_payload": true,
-      "staged_sha256": "aad535d4fab7e60a95dfa6673b783c93e46f86d415933714ac38a6a0da020b0c"
+      "staged_sha256": "7adfe376bbb46a35f18aba450ad4e5cb8f0b20088647d104b1a0970da3e40e37"
     },
     {
       "target_path": "schemas/checkpoint.schema.json",
@@ -772,7 +772,7 @@
         "product-tests"
       ],
       "release_payload": true,
-      "staged_sha256": "c1c9daa97c2322cc5d00aa27fe17949e95a36d07b0edabac0a8bf69e2a73c8da"
+      "staged_sha256": "7a8ca138a8aa7bd0a0c9ceaafd875124b1bdf9f7d7496267c3a38156f7359e40"
     },
     {
       "target_path": "src/blackbox_vnext/__main__.py",
@@ -1764,7 +1764,7 @@
         "product-tests"
       ],
       "release_payload": true,
-      "staged_sha256": "784ee79008bde125c40f708511d2b1be383f3dad6ec5fcecd90e547fb31ad772"
+      "staged_sha256": "b72e90c88c553da97526f4c1616a659f7dbde9cdbf013d824bc81be6c9f72de2"
     },
     {
       "target_path": "tests/test_acceptance.py",
@@ -2068,7 +2068,7 @@
         "product-tests"
       ],
       "release_payload": true,
-      "staged_sha256": "3e0191e859dc216dfa9c062cb2e58c48908d53463db3acc5bc35d823fd0f40b0"
+      "staged_sha256": "a49e210244dbd7383005ca89198da195275a8146ce2054f87eee59f2cc3842e6"
     }
   ]
 }

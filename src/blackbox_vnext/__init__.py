@@ -13,7 +13,7 @@ from .receipt import (
 )
 from .recovery import RecoveryResult, recover
 
-__version__ = "2.0.0.dev0"
+__version__ = "2.0.0"
 
 __all__ = [
     "CanonicalRequirement", "CaseSAuthorityProfile", "CorpusBlocker",
@@ -23,3 +23,4 @@ __all__ = [
     "authorization_from_slice4", "make_receipt_event", "pre_release_check", "recover", "sha256_canonical",
     "validate_receipt_event", "verify_content_hash", "verify_independent",
 ]
+

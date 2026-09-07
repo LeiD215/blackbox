@@ -13,7 +13,7 @@
 - Remote `vnext` migration branch: **CREATED** at `e344ef1f913112d661365a2ad3cb9ddb5dec1bf6` (tree `35f8fed246008a7009dae25b4bf0c094ee5a81e3`) via USER-DIRECT push; coordinator independently re-verified remote state matches.
 - Default branch: still `main` (`011680e9cfda68e65010a4e402a269fa871ccf20`, tree `a049228cca4a9b75f77784fa56ae0ac646448548`). No default-branch switch has occurred.
 - Legacy preservation: `main`, `legacy/v1`, `v1.0.0` (annotated tag, peeled to `011680e9...`) all preserved unchanged. 16 historical product paths preserved byte-for-byte from the v1 baseline.
-- No v2 release tag created; BCL 1.0 root `LICENSE` is present in the local successor (not yet a public release); `pyproject.toml` version remains `2.0.0.dev0`.
+- Local v2.0.0 release-prep successor prepared: `pyproject.toml` version is `2.0.0` (local metadata only — no v2 release tag or GitHub Release created yet). BCL 1.0 root `LICENSE` is present in the local successor; release/tag/default-branch/license-finalization decisions remain separate USER gates.
 - Branch availability vs formal release: presence of remote `vnext` is a reviewed branch artifact, not a published release. Qualified legal review of BCL 1.0 is deferred and non-blocking per USER decision; release/tag/default-branch/license-finalization decisions remain separate USER gates.
 - Next decision boundary (separate USER gates, NOT performed by this commit):
   - adoption / default-branch switch from `main` to `vnext`;
@@ -99,3 +99,4 @@ The remainder of this file preserves the 2026-07-22 self-snapshot of the legacy 
 - [ ] 视情况理清 blackbox 与项目专属 Skill 的关系
 
 --- END 2026-07-22 legacy snapshot ---
+

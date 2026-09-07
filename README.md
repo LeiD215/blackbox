@@ -20,7 +20,7 @@ The exact v1 product remains at `v1.0.0` and `legacy/v1`. A retained v1-style wo
 
 ## Release, version, license status
 
-- `pyproject.toml` version is `2.0.0.dev0` (pre-release).
+- `pyproject.toml` version is `2.0.0` (release candidate / prepared tree; this is a local v2.0.0 release-prep successor — no Git tag or GitHub Release exists yet).
 - Root `LICENSE` now supplies Blackbox Community License 1.0 (BCL 1.0) in the local successor tree. Licensing is positioned as Source Available / Community License, not OSI Open Source.
 - Qualified legal review of BCL 1.0 has not occurred; it is deferred and is non-blocking per USER decision.
 - A final v2 release/tag, default-branch switch, and any remaining release-license actions remain distinct USER gates and are not performed by this README.
@@ -28,3 +28,4 @@ The exact v1 product remains at `v1.0.0` and `legacy/v1`. A retained v1-style wo
 ## What this `vnext` branch is and is not
 
 This branch is the reviewed local successor branch on top of the reviewed migration candidate. It exists so that a possible later default-branch switch can be evaluated against truthful, validated material. It is NOT itself a published release, a v2 release tag, or a license-decided artifact.
+
