@@ -36,11 +36,11 @@ v1 产品原样保留在 `v1.0.0` 和 `legacy/v1`。保留的 v1 风格工作流
 
 - `main`、`legacy/v1`、`v1.0.0` 作为遗留基线原样保留
   （commit `011680e9cfda68e65010a4e402a269fa871ccf20`）。
-- `vnext` 是仓库默认分支，其 tip 为
-  `f26db56d0cabdfae900a3befc222547a23c3d909`
-  （tree `69b582239920c71f7d0588a38d6b0d1658842abf`）。
+- `vnext` 是仓库默认分支（可变、持续演进的开发/当前分支；
+  静态文档不固化其活 tip 的 SHA/tree）。
 - Git 标签 `v2.0.0` 已存在并指向同一 commit
-  （`f26db56d0cabdfae900a3befc222547a23c3d909`）；GitHub Release
+  （`f26db56d0cabdfae900a3befc222547a23c3d909`，
+  tree `69b582239920c71f7d0588a38d6b0d1658842abf`）；GitHub Release
   `v2.0.0` 已发布：
   <https://github.com/LeiD215/blackbox/releases/tag/v2.0.0>。
 - `pyproject.toml` 版本为 `2.0.0`。该包**未**发布到 PyPI；请从仓库安装
@@ -51,7 +51,7 @@ v1 产品原样保留在 `v1.0.0` 和 `legacy/v1`。保留的 v1 风格工作流
 
 ## 这个 `vnext` 分支是什么、不是什么
 
-该分支是仓库默认分支，也是 v2.0.0 的已发布状态。它是 v1/迁移基线的经过
-评审的接续版本，不是 legacy v1 产物。从 `main` 切换到 `vnext` 作为默认
-分支已经完成；不再存在任何 `main` -> `vnext` 的切换门禁。后续任何默认
-分支变更都属于单独的用户拍板事项。
+该分支是仓库默认分支，是 v2.0.0 不可变发布快照的经过评审的接续演进；
+它可以在不改变 v2.0.0 标签/Release 的前提下继续前进，不是 legacy v1 产物。
+从 `main` 切换到 `vnext` 作为默认分支已经完成；不再存在任何 `main` ->
+`vnext` 的切换门禁。后续任何默认分支变更都属于单独的用户拍板事项。

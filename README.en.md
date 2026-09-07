@@ -38,11 +38,11 @@ assurance guarantees. The full cutover matrix lives at
 
 - `main` and `legacy/v1` and `v1.0.0` are preserved as the legacy baseline
   (commit `011680e9cfda68e65010a4e402a269fa871ccf20`).
-- `vnext` is the repository default branch. Its tip is
-  `f26db56d0cabdfae900a3befc222547a23c3d909`
-  (tree `69b582239920c71f7d0588a38d6b0d1658842abf`).
+- `vnext` is the repository default branch (a mutable, continuously evolving
+  development/current branch; static docs do not pin its live tip SHA/tree).
 - The Git tag `v2.0.0` exists and peels to the same commit
-  (`f26db56d0cabdfae900a3befc222547a23c3d909`); the GitHub Release
+  (`f26db56d0cabdfae900a3befc222547a23c3d909`, tree
+  `69b582239920c71f7d0588a38d6b0d1658842abf`); the GitHub Release
   `v2.0.0` is published at
   <https://github.com/LeiD215/blackbox/releases/tag/v2.0.0>.
 - `pyproject.toml` version is `2.0.0`. The package is **not** published to
@@ -54,8 +54,9 @@ assurance guarantees. The full cutover matrix lives at
 
 ## What this `vnext` branch is and is not
 
-This branch is the repository default branch and the v2.0.0 released state. It
-is the reviewed successor to the v1/migration baseline and is NOT a legacy
-v1 artifact. The default-branch switch from `main` to `vnext` has already been
-performed; no future `main` -> `vnext` switch gate remains. Any subsequent
-default-branch change would be a separate USER gate.
+This branch is the repository default branch and the reviewed evolution beyond
+the immutable v2.0.0 released snapshot; it may advance without changing the
+v2.0.0 tag/Release, and is NOT a legacy v1 artifact. The default-branch switch
+from `main` to `vnext` has already been performed; no future
+`main` -> `vnext` switch gate remains. Any subsequent default-branch change
+would be a separate USER gate.

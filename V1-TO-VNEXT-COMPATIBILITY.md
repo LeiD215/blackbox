@@ -28,12 +28,12 @@ This document states the cutover matrix between Blackbox v1 (preserved at `legac
 ## Branch / default-branch boundary
 
 - `main` and `legacy/v1` and `v1.0.0` are preserved as the legacy baseline (commit `011680e9cfda68e65010a4e402a269fa871ccf20`).
-- `vnext` is the repository default branch (released tip `f26db56d0cabdfae900a3befc222547a23c3d909`, tree `69b582239920c71f7d0588a38d6b0d1658842abf`). The default-branch switch from `main` to `vnext` has already been performed.
+- `vnext` is the repository current/default branch (a mutable development/current branch; static docs do not pin its live tip). It is the reviewed successor to the v1/migration baseline and is allowed to advance beyond the immutable v2.0.0 release snapshot. The default-branch switch from `main` to `vnext` has already been performed.
 - No future `main` -> `vnext` default-branch switch gate remains. Any subsequent default-branch change would be a separate USER gate.
 
 ## Release / license boundary
 
-- `pyproject.toml` version is `2.0.0`; the annotated Git tag `v2.0.0` and the GitHub Release `v2.0.0` exist at `f26db56d0cabdfae900a3befc222547a23c3d909` (<https://github.com/LeiD215/blackbox/releases/tag/v2.0.0>); the package is **not** published to PyPI.
+- `pyproject.toml` version is `2.0.0`; the annotated Git tag `v2.0.0` and the GitHub Release `v2.0.0` exist at `f26db56d0cabdfae900a3befc222547a23c3d909` (tree `69b582239920c71f7d0588a38d6b0d1658842abf`) (<https://github.com/LeiD215/blackbox/releases/tag/v2.0.0>); the package is **not** published to PyPI.
 - The `vnext` successor tree carries BCL 1.0 at root `LICENSE`; license policy is positioned as Source Available / Community License. Qualified legal review is deferred and non-blocking per USER decision.
 - The formal v2.0.0 release/tag has been performed (v2.0.0 at `f26db56d0cabdfae900a3befc222547a23c3d909`). No remaining cutover gate exists; any future default-branch/license change remains a separate USER gate. The default-branch switch from `main` to `vnext` has already been performed and is not a remaining gate.
 
