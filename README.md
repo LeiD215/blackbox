@@ -14,18 +14,18 @@ The exact v1 product remains at `v1.0.0` and `legacy/v1`. A retained v1-style wo
 
 ## Branch state
 
-- `main` and `legacy/v1` and `v1.0.0` are preserved.
-- `vnext` exists as a remote branch containing the reviewed migration candidate (currently `e344ef1f913112d661365a2ad3cb9ddb5dec1bf6`, tree `35f8fed246008a7009dae25b4bf0c094ee5a81e3`). The presence of the `vnext` branch does not by itself switch the default branch.
-- Switching the default branch from `main` to `vnext`, if later approved, is a distinct USER gate. It is not performed by this README.
+- `main` and `legacy/v1` and `v1.0.0` are preserved as the legacy baseline (commit `011680e9cfda68e65010a4e402a269fa871ccf20`).
+- `vnext` is the repository default branch (currently `1f8e3e37119a70c343781db413311b20cdda4668`, tree `7a664628eeeeea2be8803486e2832e98c7c4b01d`). The default-branch switch from `main` to `vnext` has already been performed.
+- No future `main` -> `vnext` default-branch switch gate remains. Any subsequent default-branch change would be a separate USER gate.
 
 ## Release, version, license status
 
 - `pyproject.toml` version is `2.0.0` (release candidate / prepared tree; this is a local v2.0.0 release-prep successor — no Git tag or GitHub Release exists yet).
 - Root `LICENSE` now supplies Blackbox Community License 1.0 (BCL 1.0) in the local successor tree. Licensing is positioned as Source Available / Community License, not OSI Open Source.
 - Qualified legal review of BCL 1.0 has not occurred; it is deferred and is non-blocking per USER decision.
-- A final v2 release/tag, default-branch switch, and any remaining release-license actions remain distinct USER gates and are not performed by this README.
+- A final v2 release/tag and any remaining release-license actions remain distinct USER gates and are not performed by this README. The default-branch switch from `main` to `vnext` has already been performed and is not a remaining USER gate.
 
 ## What this `vnext` branch is and is not
 
-This branch is the reviewed local successor branch on top of the reviewed migration candidate. It exists so that a possible later default-branch switch can be evaluated against truthful, validated material. It is NOT itself a published release, a v2 release tag, or a license-decided artifact.
+This branch is the reviewed local successor branch on top of the reviewed migration candidate. It is the repository default branch. It is NOT itself a published release, a v2 release tag, or a license-decided artifact.
 

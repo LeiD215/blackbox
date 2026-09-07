@@ -27,13 +27,13 @@ This document states the cutover matrix between Blackbox v1 (preserved at `legac
 
 ## Branch / default-branch boundary
 
-- `main` and `legacy/v1` and `v1.0.0` remain preserved.
-- `vnext` exists as a remote branch containing the reviewed migration candidate (`e344ef1f913112d661365a2ad3cb9ddb5dec1bf6`, tree `35f8fed246008a7009dae25b4bf0c094ee5a81e3`). Its presence does not by itself change the default branch.
-- Switching the default branch from `main` to `vnext`, if later approved, is a distinct adoption gate and is NOT performed by this cutover matrix.
+- `main` and `legacy/v1` and `v1.0.0` are preserved as the legacy baseline (commit `011680e9cfda68e65010a4e402a269fa871ccf20`).
+- `vnext` is the repository default branch (currently `1f8e3e37119a70c343781db413311b20cdda4668`, tree `7a664628eeeeea2be8803486e2832e98c7c4b01d`). The default-branch switch from `main` to `vnext` has already been performed.
+- No future `main` -> `vnext` default-branch switch gate remains. Any subsequent default-branch change would be a separate USER gate.
 
 ## Release / license boundary
 
 - `pyproject.toml` version is `2.0.0` (local v2.0.0 release-prep successor; no Git tag or GitHub Release created yet).
 - The `vnext` successor tree carries BCL 1.0 at root `LICENSE`; license policy is positioned as Source Available / Community License. Qualified legal review is deferred and non-blocking per USER decision.
-- A formal v2.0.0 release/tag and any default-branch switch remain separate USER gates and are NOT performed by this cutover matrix.
+- A formal v2.0.0 release/tag remains a separate USER gate and is NOT performed by this cutover matrix. The default-branch switch from `main` to `vnext` has already been performed and is not a remaining gate.
 

@@ -2069,6 +2069,22 @@
       ],
       "release_payload": true,
       "staged_sha256": "a49e210244dbd7383005ca89198da195275a8146ce2054f87eee59f2cc3842e6"
+    },
+    {
+      "target_path": "LICENSE",
+      "action": "preserve",
+      "source_repository": "LeiD215/blackbox",
+      "source_path": "LICENSE",
+      "source_ref": "fd45f0839d0a7d36f6c3c0976bcb7436be726d2b",
+      "source_blob_sha": "548f815ed0f318cfc1a9ba131480731690fa2555",
+      "product_role": "product license contract",
+      "compatibility_impact": "byte-preserved Git blob",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "9b6e947e942d9060d893728787666b68344aadf43f7f6649b0543fac523c77fc"
     }
   ]
 }
