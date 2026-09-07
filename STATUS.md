@@ -11,13 +11,13 @@
 - vNext productization validation: **PASS** (Windows suite, Linux vm2, installed/no-Git F2, Slice2/4/5 guards, manifest coverage, CRLF fail-closed).
 - Official Codex final migration candidate review: **REVIEW PASS** (round 5; evidence commit `9093ca7d823d6d1e2ffe59efc5ab49d204417565`, L1-L4 all PASS).
 - Remote `vnext` migration branch: **CREATED** at `e344ef1f913112d661365a2ad3cb9ddb5dec1bf6` (tree `35f8fed246008a7009dae25b4bf0c094ee5a81e3`) via USER-DIRECT push; coordinator independently re-verified remote state matches.
-- Default branch: `vnext` (`1f8e3e37119a70c343781db413311b20cdda4668`, tree `7a664628eeeeea2be8803486e2832e98c7c4b01d`). The default-branch switch from `main` to `vnext` has already been performed; no future switch gate remains.
+- Default branch: `vnext` (`f26db56d0cabdfae900a3befc222547a23c3d909`, tree `69b582239920c71f7d0588a38d6b0d1658842abf`). The default-branch switch from `main` to `vnext` has already been performed; no future switch gate remains.
 - Legacy preservation: `main`, `legacy/v1`, `v1.0.0` (annotated tag, peeled to `011680e9...`) all preserved unchanged. 16 historical product paths preserved byte-for-byte from the v1 baseline.
-- Local v2.0.0 release-prep successor prepared: `pyproject.toml` version is `2.0.0` (local metadata only — no v2 release tag or GitHub Release created yet). BCL 1.0 root `LICENSE` is present in the local successor; release/tag/default-branch/license-finalization decisions remain separate USER gates.
-- Branch availability vs formal release: presence of remote `vnext` is a reviewed branch artifact, not a published release. Qualified legal review of BCL 1.0 is deferred and non-blocking per USER decision; release/tag/default-branch/license-finalization decisions remain separate USER gates.
+- v2.0.0 is released: `pyproject.toml` version is `2.0.0`; the annotated Git tag `v2.0.0` exists and peels to `f26db56d0cabdfae900a3befc222547a23c3d909`; the GitHub Release `v2.0.0` is published (<https://github.com/LeiD215/blackbox/releases/tag/v2.0.0>); the package is **not** published to PyPI. BCL 1.0 root `LICENSE` is in the released tree.
+- Formal release status: the `vnext` branch is the released default branch (v2.0.0, see above); the package is not published to PyPI. Qualified legal review of BCL 1.0 is deferred and non-blocking per USER decision; any future default-branch/license-finalization decision remains a separate USER gate.
 - Next decision boundary (separate USER gates, NOT performed by this commit):
-  - release/tag/license decision for v2.
-  The default-branch switch from `main` to `vnext` is already complete and is not a remaining gate.
+  - qualified legal review of BCL 1.0 (deferred and non-blocking).
+  The v2.0.0 release/tag decision has been performed; the default-branch switch from `main` to `vnext` is already complete and is not a remaining gate.
 
 ## Historical context - 2026-07-22 snapshot of blackbox Skill (preserved)
 

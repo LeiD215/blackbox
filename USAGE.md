@@ -161,6 +161,7 @@ implementation.
 ```powershell
 mkdir C:\work\demo ; cd C:\work\demo
 blackbox-vnext init --root .
+New-Item -ItemType Directory -Force -Path .\docs
 Set-Content -Path .\docs\release-notes.md -Value "# v2.0.0 release notes" -Encoding UTF8
 ```
 
@@ -711,4 +712,3 @@ table is a convenience index, not a substitute.
 - This guide documents the released implementation only. If documentation and
   implementation disagree, the implementation and its tests win; report such
   discrepancies rather than guessing.
-

@@ -647,6 +647,22 @@
       "staged_sha256": "4b55f96ff102af318a42a4f106e795f8d8ba310635228a6d7a84af3639fdd8b8"
     },
     {
+      "target_path": "README.en.md",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "f311c88ceb97f98987601871212aa063e4ba1f6af18ef9dead6f828342e71732"
+    },
+    {
       "target_path": "README.md",
       "action": "transform",
       "source_repository": "LeiD215/blackbox",
@@ -757,6 +773,22 @@
       ],
       "release_payload": true,
       "staged_sha256": "c9c1755dd75a88cd5669ee70aab1db85f8ce99d5cb679672b85af6339e14c76b"
+    },
+    {
+      "target_path": "USAGE.md",
+      "action": "generate",
+      "source_repository": null,
+      "source_path": null,
+      "source_ref": null,
+      "source_blob_sha": null,
+      "product_role": "product runtime/documentation/test",
+      "compatibility_impact": "new vNext file",
+      "required_validation": [
+        "manifest-sha256",
+        "product-tests"
+      ],
+      "release_payload": true,
+      "staged_sha256": "1fdb724e47641f80f9f4e87a4440a7e6e3c3b8d1670b731d263e41c2df2be61d"
     },
     {
       "target_path": "src/blackbox_vnext/__init__.py",
