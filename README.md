@@ -1,31 +1,57 @@
-# Blackbox vNext
+# Blackbox v2.0.0
 
-Blackbox is a project recording and provenance mechanism.  vNext makes formal governance records reliable through canonical event and receipt history; it is not a generic IAM or workflow product.
+[**English**](./README.en.md) · **使用指南：[USAGE.md](./USAGE.md)**
 
-## vNext operation
+Blackbox 是一套项目记录与溯源机制（project recording and provenance
+mechanism）。v2.0.0（vNext）通过规范化的规范事件与凭证历史（canonical
+event and receipt history）让正式的治理记录变得可靠；它不是通用的 IAM 或
+工作流产品。
 
-Run `blackbox-vnext init --root <project>` to create the portable project-local `.blackbox/` record area.  Formal governance mutations MUST use its canonical records and validator/projector semantics.  `write` synchronously validates a record. `validate`, `status`, `checkpoint`, `observe`, `resume`, `self-verify`, `independent-verify`, and `pre-release-check` operate against the same selected project root. Core operation has no Git requirement.
+## 快速开始
 
-Markdown is human context, projection, or frozen legacy material; it is never a second writable canonical source of truth.  There is no long-term dual write of current state. Existing projects cut over explicitly: vNext does not parse legacy prose into verified typed history.
+完整的端到端使用指南见 **[USAGE.md](./USAGE.md)**（安装、项目初始化、
+记录/声明/验证工作流、checkpoint/resume、凭证校验、以及发布前检查门禁）。
+本 README 其余部分是产品定位与仓库现状的摘要。
 
-## Compatibility and cutover
+## vNext 操作方式
 
-The exact v1 product remains at `v1.0.0` and `legacy/v1`. A retained v1-style workflow is **legacy v1 mode** only and does not provide vNext governance or assurance guarantees. The full cutover matrix lives at `V1-TO-VNEXT-COMPATIBILITY.md` in this tree.
+运行 `blackbox-vnext init --root <project>` 创建可移植的项目本地记录区
+`.blackbox/`。正式的治理变更必须使用其中的规范记录，并遵循校验器/投影
+（validator/projector）语义。`write` 在接收记录前会同步校验；
+`validate`、`status`、`checkpoint`、`observe`、`resume`、`self-verify`、
+`independent-verify`、`pre-release-check` 都作用于同一个被选中的项目根。
+核心操作不依赖 Git。
 
-## Branch state
+Markdown 只是人类上下文、投影或冻结的遗留材料，永远不是第二个可写的
+规范事实源。当前状态不存在长期双写。已有项目需要显式切换：
+vNext 不会把遗留散文解析成经过验证的类型化历史。
 
-- `main` and `legacy/v1` and `v1.0.0` are preserved as the legacy baseline (commit `011680e9cfda68e65010a4e402a269fa871ccf20`).
-- `vnext` is the repository default branch (currently `1f8e3e37119a70c343781db413311b20cdda4668`, tree `7a664628eeeeea2be8803486e2832e98c7c4b01d`). The default-branch switch from `main` to `vnext` has already been performed.
-- No future `main` -> `vnext` default-branch switch gate remains. Any subsequent default-branch change would be a separate USER gate.
+## 兼容性与切换
 
-## Release, version, license status
+v1 产品原样保留在 `v1.0.0` 和 `legacy/v1`。保留的 v1 风格工作流仅是
+**legacy v1 模式**，不提供 vNext 的治理或保证语义。完整切换矩阵见本树
+中的 `V1-TO-VNEXT-COMPATIBILITY.md`。
 
-- `pyproject.toml` version is `2.0.0` (release candidate / prepared tree; this is a local v2.0.0 release-prep successor — no Git tag or GitHub Release exists yet).
-- Root `LICENSE` now supplies Blackbox Community License 1.0 (BCL 1.0) in the local successor tree. Licensing is positioned as Source Available / Community License, not OSI Open Source.
-- Qualified legal review of BCL 1.0 has not occurred; it is deferred and is non-blocking per USER decision.
-- A final v2 release/tag and any remaining release-license actions remain distinct USER gates and are not performed by this README. The default-branch switch from `main` to `vnext` has already been performed and is not a remaining USER gate.
+## 分支、发布、版本与许可证状态
 
-## What this `vnext` branch is and is not
+- `main`、`legacy/v1`、`v1.0.0` 作为遗留基线原样保留
+  （commit `011680e9cfda68e65010a4e402a269fa871ccf20`）。
+- `vnext` 是仓库默认分支，其 tip 为
+  `f26db56d0cabdfae900a3befc222547a23c3d909`
+  （tree `69b582239920c71f7d0588a38d6b0d1658842abf`）。
+- Git 标签 `v2.0.0` 已存在并指向同一 commit
+  （`f26db56d0cabdfae900a3befc222547a23c3d909`）；GitHub Release
+  `v2.0.0` 已发布：
+  <https://github.com/LeiD215/blackbox/releases/tag/v2.0.0>。
+- `pyproject.toml` 版本为 `2.0.0`。该包**未**发布到 PyPI；请从仓库安装
+  （见 [USAGE.md](./USAGE.md#installation)）。
+- 根目录 `LICENSE` 提供 Blackbox Community License 1.0（BCL 1.0）。
+  许可证定位为 Source Available / Community License，而非 OSI Open Source。
+  BCL 1.0 的合格法律审查尚未进行；按用户决定推迟且不阻塞发布。
 
-This branch is the reviewed local successor branch on top of the reviewed migration candidate. It is the repository default branch. It is NOT itself a published release, a v2 release tag, or a license-decided artifact.
+## 这个 `vnext` 分支是什么、不是什么
 
+该分支是仓库默认分支，也是 v2.0.0 的已发布状态。它是 v1/迁移基线的经过
+评审的接续版本，不是 legacy v1 产物。从 `main` 切换到 `vnext` 作为默认
+分支已经完成；不再存在任何 `main` -> `vnext` 的切换门禁。后续任何默认
+分支变更都属于单独的用户拍板事项。
