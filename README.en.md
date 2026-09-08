@@ -1,6 +1,6 @@
 # Blackbox v2.0.0
 
-[**中文版**](./README.md) · **Usage guide: [USAGE.md](./USAGE.md)**
+[**中文版**](./README.md) · **Usage guide: [USAGE.en.md](./USAGE.en.md)** · 中文使用指南：[USAGE.md](./USAGE.md)
 
 Blackbox is a project recording and provenance mechanism. v2.0.0 (vNext) makes
 formal governance records reliable through canonical event and receipt history;
@@ -8,7 +8,7 @@ it is not a generic IAM or workflow product.
 
 ## Quick start
 
-See **[USAGE.md](./USAGE.md)** for the full end-to-end usage guide
+See **[USAGE.en.md](./USAGE.en.md)** for the full end-to-end usage guide
 (installation, project initialization, record/claim/verification workflow,
 checkpoint/resume, receipt validation, and the pre-release gate). The rest of
 this README is the product-positioning and repository-state summary.
@@ -46,7 +46,7 @@ assurance guarantees. The full cutover matrix lives at
   `v2.0.0` is published at
   <https://github.com/LeiD215/blackbox/releases/tag/v2.0.0>.
 - `pyproject.toml` version is `2.0.0`. The package is **not** published to
-  PyPI; install from the repository (see [USAGE.md](./USAGE.md#installation)).
+  PyPI; install from the repository (see [USAGE.en.md](./USAGE.en.md#installation)).
 - Root `LICENSE` supplies Blackbox Community License 1.0 (BCL 1.0). Licensing
   is positioned as Source Available / Community License, not OSI Open Source.
   Qualified legal review of BCL 1.0 has not occurred; it is deferred and is

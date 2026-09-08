@@ -1,6 +1,6 @@
 # Blackbox v2.0.0
 
-[**English**](./README.en.md) · **使用指南：[USAGE.md](./USAGE.md)**
+[**English**](./README.en.md) · **使用指南：[USAGE.md](./USAGE.md)** · **English usage guide: [USAGE.en.md](./USAGE.en.md)**
 
 Blackbox 是一套项目记录与溯源机制（project recording and provenance
 mechanism）。v2.0.0（vNext）通过规范化的规范事件与凭证历史（canonical
